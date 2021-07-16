@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+    smtp:
+        image: rogervila/docker-smtp-server:latest
+        environment:
+            - "SMTP_FAIL=1"
+        ports:
+            - "2525:25"
